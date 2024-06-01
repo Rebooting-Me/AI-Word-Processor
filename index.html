@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot Selector</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="button-container">
+        <select id="chatbot-selector" onchange="showChatbot(this.value)">
+            <option value="" selected>Select a chatbot</option>
+            <option value="1">Abstract</option>
+            <option value="2">Introduction</option>
+            <option value="3">Methods</option>
+            <option value="4">Results</option>
+            <option value="5">Discussion</option>
+        </select>
+    </div>
+    <div id="chatbot-container"></div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

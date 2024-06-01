@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #212d31;
+}
+
+.button-container {
+    position: fixed;
+    top: 0;
+}
+
+#chatbot-selector {
+    width: fit-content;
+    padding: 5px;
+    font-size: 18px;
+}
+
+#chatbot-selector option {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#chatbot-container {
+    position: fixed;
+    left:0;
+    min-width: 30%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
