@@ -17,6 +17,7 @@ body {
     width: fit-content;
     padding: 5px;
     font-size: 18px;
+    cursor: pointer;
 }
 
 #chatbot-selector option {
@@ -35,4 +36,69 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#similarity-container {
+    font-family: 'Inter';
+    font-weight: 600;
+    position: fixed;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#similarity-container h2 {
+    text-align: center;
+}
+
+#similarity-container h3 {
+    color: rgb(105, 105, 105);
+}
+
+#similarity-container textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#similarity-container button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#similarity-container button:hover {
+    background-color: #45a049;
+}
+
+#similarity-results {
+    margin-top: 20px;
+}
+
+#toggle-similarity {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

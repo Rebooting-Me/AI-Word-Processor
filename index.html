@@ -18,7 +18,22 @@
         </select>
     </div>
     <div id="chatbot-container"></div>
+    <button id="toggle-similarity" onclick="toggleSimilarity()">Toggle Similarity Checker</button>
+    <div id="similarity-container" style="display: none;">
+        <h2>Sentence Similarity Checker</h2>
+        <div>
+            <h3>Source Sentence</h3>
+            <textarea id="source-sentence" placeholder="Enter the source sentence"></textarea>
+        </div>
+        <div>
+            <h3>Target Sentences</h3>
+            <textarea id="target-sentences" placeholder="Enter sentences to compare, separated by new lines"></textarea>
+        </div>
+        <button onclick="checkSimilarity()">Check Similarity</button>
+        <div id="similarity-results"></div>
+    </div>
 
     <script src="./main.js"></script>
+    <script src="./similarity.js"></script>
 </body>
 </html>
